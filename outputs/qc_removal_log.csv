@@ -1,0 +1,180 @@
+RESP_ID,FAIL_RULE,SEVERITY,VALUE_RECORDED,THRESHOLD,REASON
+R1001201,SPEEDING,CRITICAL,193 seconds,< 240 seconds,Survey completed in 193s (threshold: < 240s; median: 712s). Insufficient time to read questions.
+R1001202,SPEEDING,CRITICAL,204 seconds,< 240 seconds,Survey completed in 204s (threshold: < 240s; median: 712s). Insufficient time to read questions.
+R1001203,SPEEDING,CRITICAL,147 seconds,< 240 seconds,Survey completed in 147s (threshold: < 240s; median: 712s). Insufficient time to read questions.
+R1001204,SPEEDING,CRITICAL,181 seconds,< 240 seconds,Survey completed in 181s (threshold: < 240s; median: 712s). Insufficient time to read questions.
+R1001205,SPEEDING,CRITICAL,116 seconds,< 240 seconds,Survey completed in 116s (threshold: < 240s; median: 712s). Insufficient time to read questions.
+R1001206,SPEEDING,CRITICAL,147 seconds,< 240 seconds,Survey completed in 147s (threshold: < 240s; median: 712s). Insufficient time to read questions.
+R1001207,SPEEDING,CRITICAL,106 seconds,< 240 seconds,Survey completed in 106s (threshold: < 240s; median: 712s). Insufficient time to read questions.
+R1001208,SPEEDING,CRITICAL,88 seconds,< 240 seconds,Survey completed in 88s (threshold: < 240s; median: 712s). Insufficient time to read questions.
+R1001209,SPEEDING,CRITICAL,157 seconds,< 240 seconds,Survey completed in 157s (threshold: < 240s; median: 712s). Insufficient time to read questions.
+R1001210,SPEEDING,CRITICAL,163 seconds,< 240 seconds,Survey completed in 163s (threshold: < 240s; median: 712s). Insufficient time to read questions.
+R1001211,SPEEDING,CRITICAL,105 seconds,< 240 seconds,Survey completed in 105s (threshold: < 240s; median: 712s). Insufficient time to read questions.
+R1001212,SPEEDING,CRITICAL,76 seconds,< 240 seconds,Survey completed in 76s (threshold: < 240s; median: 712s). Insufficient time to read questions.
+R1001213,SPEEDING,CRITICAL,209 seconds,< 240 seconds,Survey completed in 209s (threshold: < 240s; median: 712s). Insufficient time to read questions.
+R1001214,SPEEDING,CRITICAL,106 seconds,< 240 seconds,Survey completed in 106s (threshold: < 240s; median: 712s). Insufficient time to read questions.
+R1001215,SPEEDING,CRITICAL,78 seconds,< 240 seconds,Survey completed in 78s (threshold: < 240s; median: 712s). Insufficient time to read questions.
+R1001216,SPEEDING,CRITICAL,179 seconds,< 240 seconds,Survey completed in 179s (threshold: < 240s; median: 712s). Insufficient time to read questions.
+R1001217,SPEEDING,CRITICAL,95 seconds,< 240 seconds,Survey completed in 95s (threshold: < 240s; median: 712s). Insufficient time to read questions.
+R1001218,SPEEDING,CRITICAL,65 seconds,< 240 seconds,Survey completed in 65s (threshold: < 240s; median: 712s). Insufficient time to read questions.
+R1001219,SPEEDING,CRITICAL,68 seconds,< 240 seconds,Survey completed in 68s (threshold: < 240s; median: 712s). Insufficient time to read questions.
+R1001220,SPEEDING,CRITICAL,204 seconds,< 240 seconds,Survey completed in 204s (threshold: < 240s; median: 712s). Insufficient time to read questions.
+R1001221,SPEEDING,CRITICAL,125 seconds,< 240 seconds,Survey completed in 125s (threshold: < 240s; median: 712s). Insufficient time to read questions.
+R1001222,SPEEDING,CRITICAL,186 seconds,< 240 seconds,Survey completed in 186s (threshold: < 240s; median: 712s). Insufficient time to read questions.
+R1001223,SPEEDING,CRITICAL,85 seconds,< 240 seconds,Survey completed in 85s (threshold: < 240s; median: 712s). Insufficient time to read questions.
+R1001224,SPEEDING,CRITICAL,127 seconds,< 240 seconds,Survey completed in 127s (threshold: < 240s; median: 712s). Insufficient time to read questions.
+R1001225,SPEEDING,CRITICAL,207 seconds,< 240 seconds,Survey completed in 207s (threshold: < 240s; median: 712s). Insufficient time to read questions.
+R1001226,SPEEDING,CRITICAL,102 seconds,< 240 seconds,Survey completed in 102s (threshold: < 240s; median: 712s). Insufficient time to read questions.
+R1001227,SPEEDING,CRITICAL,74 seconds,< 240 seconds,Survey completed in 74s (threshold: < 240s; median: 712s). Insufficient time to read questions.
+R1001228,SPEEDING,CRITICAL,141 seconds,< 240 seconds,Survey completed in 141s (threshold: < 240s; median: 712s). Insufficient time to read questions.
+R1001229,SPEEDING,CRITICAL,77 seconds,< 240 seconds,Survey completed in 77s (threshold: < 240s; median: 712s). Insufficient time to read questions.
+R1001230,SPEEDING,CRITICAL,106 seconds,< 240 seconds,Survey completed in 106s (threshold: < 240s; median: 712s). Insufficient time to read questions.
+R1001231,SPEEDING,CRITICAL,208 seconds,< 240 seconds,Survey completed in 208s (threshold: < 240s; median: 712s). Insufficient time to read questions.
+R1001232,SPEEDING,CRITICAL,157 seconds,< 240 seconds,Survey completed in 157s (threshold: < 240s; median: 712s). Insufficient time to read questions.
+R1001233,SPEEDING,CRITICAL,141 seconds,< 240 seconds,Survey completed in 141s (threshold: < 240s; median: 712s). Insufficient time to read questions.
+R1001234,SPEEDING,CRITICAL,82 seconds,< 240 seconds,Survey completed in 82s (threshold: < 240s; median: 712s). Insufficient time to read questions.
+R1001235,SPEEDING,CRITICAL,81 seconds,< 240 seconds,Survey completed in 81s (threshold: < 240s; median: 712s). Insufficient time to read questions.
+R1001236,SPEEDING,CRITICAL,96 seconds,< 240 seconds,Survey completed in 96s (threshold: < 240s; median: 712s). Insufficient time to read questions.
+R1001237,SPEEDING,CRITICAL,149 seconds,< 240 seconds,Survey completed in 149s (threshold: < 240s; median: 712s). Insufficient time to read questions.
+R1001238,SPEEDING,CRITICAL,118 seconds,< 240 seconds,Survey completed in 118s (threshold: < 240s; median: 712s). Insufficient time to read questions.
+R1001239,SPEEDING,CRITICAL,79 seconds,< 240 seconds,Survey completed in 79s (threshold: < 240s; median: 712s). Insufficient time to read questions.
+R1001240,SPEEDING,CRITICAL,200 seconds,< 240 seconds,Survey completed in 200s (threshold: < 240s; median: 712s). Insufficient time to read questions.
+R1000631,STRAIGHT_LINING,HIGH,Score=3 across all 6 items (StdDev=0.0),StdDev > 0.0 across 6-item battery,Identical rating of 3 across all 6 items in Q2 battery without reading individual statements.
+R1000664,STRAIGHT_LINING,HIGH,Score=4 across all 6 items (StdDev=0.0),StdDev > 0.0 across 6-item battery,Identical rating of 4 across all 6 items in Q2 battery without reading individual statements.
+R1000720,STRAIGHT_LINING,HIGH,Score=3 across all 6 items (StdDev=0.0),StdDev > 0.0 across 6-item battery,Identical rating of 3 across all 6 items in Q2 battery without reading individual statements.
+R1001091,STRAIGHT_LINING,HIGH,Score=4 across all 6 items (StdDev=0.0),StdDev > 0.0 across 6-item battery,Identical rating of 4 across all 6 items in Q2 battery without reading individual statements.
+R1001241,STRAIGHT_LINING,HIGH,Score=5 across all 6 items (StdDev=0.0),StdDev > 0.0 across 6-item battery,Identical rating of 5 across all 6 items in Q2 battery without reading individual statements.
+R1001242,STRAIGHT_LINING,HIGH,Score=5 across all 6 items (StdDev=0.0),StdDev > 0.0 across 6-item battery,Identical rating of 5 across all 6 items in Q2 battery without reading individual statements.
+R1001243,STRAIGHT_LINING,HIGH,Score=5 across all 6 items (StdDev=0.0),StdDev > 0.0 across 6-item battery,Identical rating of 5 across all 6 items in Q2 battery without reading individual statements.
+R1001244,STRAIGHT_LINING,HIGH,Score=5 across all 6 items (StdDev=0.0),StdDev > 0.0 across 6-item battery,Identical rating of 5 across all 6 items in Q2 battery without reading individual statements.
+R1001245,STRAIGHT_LINING,HIGH,Score=5 across all 6 items (StdDev=0.0),StdDev > 0.0 across 6-item battery,Identical rating of 5 across all 6 items in Q2 battery without reading individual statements.
+R1001246,STRAIGHT_LINING,HIGH,Score=5 across all 6 items (StdDev=0.0),StdDev > 0.0 across 6-item battery,Identical rating of 5 across all 6 items in Q2 battery without reading individual statements.
+R1001247,STRAIGHT_LINING,HIGH,Score=1 across all 6 items (StdDev=0.0),StdDev > 0.0 across 6-item battery,Identical rating of 1 across all 6 items in Q2 battery without reading individual statements.
+R1001248,STRAIGHT_LINING,HIGH,Score=1 across all 6 items (StdDev=0.0),StdDev > 0.0 across 6-item battery,Identical rating of 1 across all 6 items in Q2 battery without reading individual statements.
+R1001249,STRAIGHT_LINING,HIGH,Score=3 across all 6 items (StdDev=0.0),StdDev > 0.0 across 6-item battery,Identical rating of 3 across all 6 items in Q2 battery without reading individual statements.
+R1001250,STRAIGHT_LINING,HIGH,Score=5 across all 6 items (StdDev=0.0),StdDev > 0.0 across 6-item battery,Identical rating of 5 across all 6 items in Q2 battery without reading individual statements.
+R1001251,STRAIGHT_LINING,HIGH,Score=5 across all 6 items (StdDev=0.0),StdDev > 0.0 across 6-item battery,Identical rating of 5 across all 6 items in Q2 battery without reading individual statements.
+R1001252,STRAIGHT_LINING,HIGH,Score=1 across all 6 items (StdDev=0.0),StdDev > 0.0 across 6-item battery,Identical rating of 1 across all 6 items in Q2 battery without reading individual statements.
+R1001253,STRAIGHT_LINING,HIGH,Score=3 across all 6 items (StdDev=0.0),StdDev > 0.0 across 6-item battery,Identical rating of 3 across all 6 items in Q2 battery without reading individual statements.
+R1001254,STRAIGHT_LINING,HIGH,Score=3 across all 6 items (StdDev=0.0),StdDev > 0.0 across 6-item battery,Identical rating of 3 across all 6 items in Q2 battery without reading individual statements.
+R1001255,STRAIGHT_LINING,HIGH,Score=5 across all 6 items (StdDev=0.0),StdDev > 0.0 across 6-item battery,Identical rating of 5 across all 6 items in Q2 battery without reading individual statements.
+R1001256,STRAIGHT_LINING,HIGH,Score=3 across all 6 items (StdDev=0.0),StdDev > 0.0 across 6-item battery,Identical rating of 3 across all 6 items in Q2 battery without reading individual statements.
+R1001257,STRAIGHT_LINING,HIGH,Score=1 across all 6 items (StdDev=0.0),StdDev > 0.0 across 6-item battery,Identical rating of 1 across all 6 items in Q2 battery without reading individual statements.
+R1001258,STRAIGHT_LINING,HIGH,Score=5 across all 6 items (StdDev=0.0),StdDev > 0.0 across 6-item battery,Identical rating of 5 across all 6 items in Q2 battery without reading individual statements.
+R1001259,STRAIGHT_LINING,HIGH,Score=3 across all 6 items (StdDev=0.0),StdDev > 0.0 across 6-item battery,Identical rating of 3 across all 6 items in Q2 battery without reading individual statements.
+R1001260,STRAIGHT_LINING,HIGH,Score=1 across all 6 items (StdDev=0.0),StdDev > 0.0 across 6-item battery,Identical rating of 1 across all 6 items in Q2 battery without reading individual statements.
+R1001261,STRAIGHT_LINING,HIGH,Score=5 across all 6 items (StdDev=0.0),StdDev > 0.0 across 6-item battery,Identical rating of 5 across all 6 items in Q2 battery without reading individual statements.
+R1001262,STRAIGHT_LINING,HIGH,Score=1 across all 6 items (StdDev=0.0),StdDev > 0.0 across 6-item battery,Identical rating of 1 across all 6 items in Q2 battery without reading individual statements.
+R1001263,STRAIGHT_LINING,HIGH,Score=3 across all 6 items (StdDev=0.0),StdDev > 0.0 across 6-item battery,Identical rating of 3 across all 6 items in Q2 battery without reading individual statements.
+R1001264,STRAIGHT_LINING,HIGH,Score=3 across all 6 items (StdDev=0.0),StdDev > 0.0 across 6-item battery,Identical rating of 3 across all 6 items in Q2 battery without reading individual statements.
+R1001265,STRAIGHT_LINING,HIGH,Score=5 across all 6 items (StdDev=0.0),StdDev > 0.0 across 6-item battery,Identical rating of 5 across all 6 items in Q2 battery without reading individual statements.
+R1001266,STRAIGHT_LINING,HIGH,Score=1 across all 6 items (StdDev=0.0),StdDev > 0.0 across 6-item battery,Identical rating of 1 across all 6 items in Q2 battery without reading individual statements.
+R1001267,STRAIGHT_LINING,HIGH,Score=3 across all 6 items (StdDev=0.0),StdDev > 0.0 across 6-item battery,Identical rating of 3 across all 6 items in Q2 battery without reading individual statements.
+R1001268,STRAIGHT_LINING,HIGH,Score=1 across all 6 items (StdDev=0.0),StdDev > 0.0 across 6-item battery,Identical rating of 1 across all 6 items in Q2 battery without reading individual statements.
+R1001269,STRAIGHT_LINING,HIGH,Score=3 across all 6 items (StdDev=0.0),StdDev > 0.0 across 6-item battery,Identical rating of 3 across all 6 items in Q2 battery without reading individual statements.
+R1001270,STRAIGHT_LINING,HIGH,Score=1 across all 6 items (StdDev=0.0),StdDev > 0.0 across 6-item battery,Identical rating of 1 across all 6 items in Q2 battery without reading individual statements.
+R1001271,STRAIGHT_LINING,HIGH,Score=1 across all 6 items (StdDev=0.0),StdDev > 0.0 across 6-item battery,Identical rating of 1 across all 6 items in Q2 battery without reading individual statements.
+R1001272,STRAIGHT_LINING,HIGH,Score=5 across all 6 items (StdDev=0.0),StdDev > 0.0 across 6-item battery,Identical rating of 5 across all 6 items in Q2 battery without reading individual statements.
+R1001273,STRAIGHT_LINING,HIGH,Score=5 across all 6 items (StdDev=0.0),StdDev > 0.0 across 6-item battery,Identical rating of 5 across all 6 items in Q2 battery without reading individual statements.
+R1001274,STRAIGHT_LINING,HIGH,Score=1 across all 6 items (StdDev=0.0),StdDev > 0.0 across 6-item battery,Identical rating of 1 across all 6 items in Q2 battery without reading individual statements.
+R1001275,STRAIGHT_LINING,HIGH,Score=5 across all 6 items (StdDev=0.0),StdDev > 0.0 across 6-item battery,Identical rating of 5 across all 6 items in Q2 battery without reading individual statements.
+R1001276,STRAIGHT_LINING,HIGH,Score=3 across all 6 items (StdDev=0.0),StdDev > 0.0 across 6-item battery,Identical rating of 3 across all 6 items in Q2 battery without reading individual statements.
+R1001277,STRAIGHT_LINING,HIGH,Score=1 across all 6 items (StdDev=0.0),StdDev > 0.0 across 6-item battery,Identical rating of 1 across all 6 items in Q2 battery without reading individual statements.
+R1001278,STRAIGHT_LINING,HIGH,Score=5 across all 6 items (StdDev=0.0),StdDev > 0.0 across 6-item battery,Identical rating of 5 across all 6 items in Q2 battery without reading individual statements.
+R1001279,STRAIGHT_LINING,HIGH,Score=3 across all 6 items (StdDev=0.0),StdDev > 0.0 across 6-item battery,Identical rating of 3 across all 6 items in Q2 battery without reading individual statements.
+R1001280,STRAIGHT_LINING,HIGH,Score=5 across all 6 items (StdDev=0.0),StdDev > 0.0 across 6-item battery,Identical rating of 5 across all 6 items in Q2 battery without reading individual statements.
+R1001282,DUPLICATE_SUBMISSION,CRITICAL,IP: 185.120.49.164,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 185.120.49.164, demographic profile, and verbatim text."
+R1001284,DUPLICATE_SUBMISSION,CRITICAL,IP: 185.120.35.50,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 185.120.35.50, demographic profile, and verbatim text."
+R1001286,DUPLICATE_SUBMISSION,CRITICAL,IP: 185.120.78.82,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 185.120.78.82, demographic profile, and verbatim text."
+R1001288,DUPLICATE_SUBMISSION,CRITICAL,IP: 185.120.25.70,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 185.120.25.70, demographic profile, and verbatim text."
+R1001290,DUPLICATE_SUBMISSION,CRITICAL,IP: 185.120.45.30,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 185.120.45.30, demographic profile, and verbatim text."
+R1001292,DUPLICATE_SUBMISSION,CRITICAL,IP: 185.120.81.132,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 185.120.81.132, demographic profile, and verbatim text."
+R1001294,DUPLICATE_SUBMISSION,CRITICAL,IP: 185.120.79.90,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 185.120.79.90, demographic profile, and verbatim text."
+R1001296,DUPLICATE_SUBMISSION,CRITICAL,IP: 185.120.44.37,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 185.120.44.37, demographic profile, and verbatim text."
+R1001298,DUPLICATE_SUBMISSION,CRITICAL,IP: 185.120.41.44,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 185.120.41.44, demographic profile, and verbatim text."
+R1001300,DUPLICATE_SUBMISSION,CRITICAL,IP: 185.120.88.87,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 185.120.88.87, demographic profile, and verbatim text."
+R1001302,DUPLICATE_SUBMISSION,CRITICAL,IP: 185.120.16.34,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 185.120.16.34, demographic profile, and verbatim text."
+R1001304,DUPLICATE_SUBMISSION,CRITICAL,IP: 185.120.16.28,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 185.120.16.28, demographic profile, and verbatim text."
+R1001306,DUPLICATE_SUBMISSION,CRITICAL,IP: 185.120.21.110,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 185.120.21.110, demographic profile, and verbatim text."
+R1001308,DUPLICATE_SUBMISSION,CRITICAL,IP: 185.120.86.152,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 185.120.86.152, demographic profile, and verbatim text."
+R1001310,DUPLICATE_SUBMISSION,CRITICAL,IP: 185.120.55.80,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 185.120.55.80, demographic profile, and verbatim text."
+R1001311,DUPLICATE_SUBMISSION,CRITICAL,IP: 192.168.127.166,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 192.168.127.166, demographic profile, and verbatim text."
+R1001312,DUPLICATE_SUBMISSION,CRITICAL,IP: 192.168.64.158,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 192.168.64.158, demographic profile, and verbatim text."
+R1001313,DUPLICATE_SUBMISSION,CRITICAL,IP: 192.168.146.63,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 192.168.146.63, demographic profile, and verbatim text."
+R1001314,DUPLICATE_SUBMISSION,CRITICAL,IP: 192.168.77.200,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 192.168.77.200, demographic profile, and verbatim text."
+R1001315,DUPLICATE_SUBMISSION,CRITICAL,IP: 192.168.116.15,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 192.168.116.15, demographic profile, and verbatim text."
+R1001316,DUPLICATE_SUBMISSION,CRITICAL,IP: 192.168.69.122,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 192.168.69.122, demographic profile, and verbatim text."
+R1001317,DUPLICATE_SUBMISSION,CRITICAL,IP: 192.168.34.144,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 192.168.34.144, demographic profile, and verbatim text."
+R1001318,DUPLICATE_SUBMISSION,CRITICAL,IP: 192.168.166.42,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 192.168.166.42, demographic profile, and verbatim text."
+R1001319,DUPLICATE_SUBMISSION,CRITICAL,IP: 192.168.200.114,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 192.168.200.114, demographic profile, and verbatim text."
+R1001320,DUPLICATE_SUBMISSION,CRITICAL,IP: 192.168.119.44,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 192.168.119.44, demographic profile, and verbatim text."
+R1001321,DUPLICATE_SUBMISSION,CRITICAL,IP: 192.168.195.220,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 192.168.195.220, demographic profile, and verbatim text."
+R1001322,DUPLICATE_SUBMISSION,CRITICAL,IP: 192.168.231.57,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 192.168.231.57, demographic profile, and verbatim text."
+R1001323,DUPLICATE_SUBMISSION,CRITICAL,IP: 192.168.14.163,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 192.168.14.163, demographic profile, and verbatim text."
+R1001324,DUPLICATE_SUBMISSION,CRITICAL,IP: 192.168.93.45,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 192.168.93.45, demographic profile, and verbatim text."
+R1001325,DUPLICATE_SUBMISSION,CRITICAL,IP: 192.168.199.109,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 192.168.199.109, demographic profile, and verbatim text."
+R1001326,DUPLICATE_SUBMISSION,CRITICAL,IP: 192.168.61.13,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 192.168.61.13, demographic profile, and verbatim text."
+R1001327,DUPLICATE_SUBMISSION,CRITICAL,IP: 192.168.111.254,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 192.168.111.254, demographic profile, and verbatim text."
+R1001328,DUPLICATE_SUBMISSION,CRITICAL,IP: 192.168.106.166,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 192.168.106.166, demographic profile, and verbatim text."
+R1001329,DUPLICATE_SUBMISSION,CRITICAL,IP: 192.168.243.213,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 192.168.243.213, demographic profile, and verbatim text."
+R1001330,DUPLICATE_SUBMISSION,CRITICAL,IP: 192.168.237.139,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 192.168.237.139, demographic profile, and verbatim text."
+R1001331,DUPLICATE_SUBMISSION,CRITICAL,IP: 192.168.177.180,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 192.168.177.180, demographic profile, and verbatim text."
+R1001332,DUPLICATE_SUBMISSION,CRITICAL,IP: 192.168.231.8,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 192.168.231.8, demographic profile, and verbatim text."
+R1001333,DUPLICATE_SUBMISSION,CRITICAL,IP: 192.168.240.184,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 192.168.240.184, demographic profile, and verbatim text."
+R1001334,DUPLICATE_SUBMISSION,CRITICAL,IP: 192.168.70.79,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 192.168.70.79, demographic profile, and verbatim text."
+R1001335,DUPLICATE_SUBMISSION,CRITICAL,IP: 192.168.104.57,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 192.168.104.57, demographic profile, and verbatim text."
+R1001336,DUPLICATE_SUBMISSION,CRITICAL,IP: 192.168.114.31,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 192.168.114.31, demographic profile, and verbatim text."
+R1001337,DUPLICATE_SUBMISSION,CRITICAL,IP: 192.168.124.12,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 192.168.124.12, demographic profile, and verbatim text."
+R1001338,DUPLICATE_SUBMISSION,CRITICAL,IP: 192.168.111.254,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 192.168.111.254, demographic profile, and verbatim text."
+R1001339,DUPLICATE_SUBMISSION,CRITICAL,IP: 192.168.100.141,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 192.168.100.141, demographic profile, and verbatim text."
+R1001340,DUPLICATE_SUBMISSION,CRITICAL,IP: 192.168.50.195,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 192.168.50.195, demographic profile, and verbatim text."
+R1001341,DUPLICATE_SUBMISSION,CRITICAL,IP: 192.168.23.204,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 192.168.23.204, demographic profile, and verbatim text."
+R1001342,DUPLICATE_SUBMISSION,CRITICAL,IP: 192.168.11.233,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 192.168.11.233, demographic profile, and verbatim text."
+R1001343,DUPLICATE_SUBMISSION,CRITICAL,IP: 192.168.246.123,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 192.168.246.123, demographic profile, and verbatim text."
+R1001344,DUPLICATE_SUBMISSION,CRITICAL,IP: 192.168.33.112,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 192.168.33.112, demographic profile, and verbatim text."
+R1001345,DUPLICATE_SUBMISSION,CRITICAL,IP: 192.168.208.39,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 192.168.208.39, demographic profile, and verbatim text."
+R1001346,DUPLICATE_SUBMISSION,CRITICAL,IP: 192.168.59.233,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 192.168.59.233, demographic profile, and verbatim text."
+R1001347,DUPLICATE_SUBMISSION,CRITICAL,IP: 192.168.146.182,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 192.168.146.182, demographic profile, and verbatim text."
+R1001348,DUPLICATE_SUBMISSION,CRITICAL,IP: 192.168.78.207,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 192.168.78.207, demographic profile, and verbatim text."
+R1001349,DUPLICATE_SUBMISSION,CRITICAL,IP: 192.168.212.191,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 192.168.212.191, demographic profile, and verbatim text."
+R1001350,DUPLICATE_SUBMISSION,CRITICAL,IP: 192.168.116.15,Unique IP & Demographics per respondent,"Repeat duplicate submission matching prior respondent on IP address 192.168.116.15, demographic profile, and verbatim text."
+R1001311,LOGIC_PRICE_INVERSION,HIGH,"TC=-25.0, CH=0.0, EX=11.1, TE=16.1",Strict Monotonic Order: TC < CH < EX < TE and values > 0,"Negative or zero price detected (TC=-25.0, CH=0.0, EX=11.1, TE=16.1)"
+R1001312,LOGIC_PRICE_INVERSION,HIGH,"TC=-25.0, CH=0.0, EX=118.0, TE=189.0",Strict Monotonic Order: TC < CH < EX < TE and values > 0,"Negative or zero price detected (TC=-25.0, CH=0.0, EX=118.0, TE=189.0)"
+R1001313,LOGIC_PRICE_INVERSION,HIGH,"TC=350.0, CH=250.0, EX=150.0, TE=50.0",Strict Monotonic Order: TC < CH < EX < TE and values > 0,"Non-monotonic pricing (TC=350.0, CH=250.0, EX=150.0, TE=50.0). Expected TC < CH < EX < TE."
+R1001314,LOGIC_BRAND_FUNNEL,HIGH,"BUMO='Gisou', EverUsed='Dabur Amla'",BUMO brand must be subset of Ever Used and P3M Used,"Respondent claimed 'Gisou' as Most Often Used, but it was not reported in Ever Used or Past 3M Used."
+R1001315,LOGIC_PRICE_INVERSION,HIGH,"TC=350.0, CH=250.0, EX=150.0, TE=50.0",Strict Monotonic Order: TC < CH < EX < TE and values > 0,"Non-monotonic pricing (TC=350.0, CH=250.0, EX=150.0, TE=50.0). Expected TC < CH < EX < TE."
+R1001316,LOGIC_PRICE_INVERSION,HIGH,"TC=-25.0, CH=0.0, EX=106.0, TE=172.0",Strict Monotonic Order: TC < CH < EX < TE and values > 0,"Negative or zero price detected (TC=-25.0, CH=0.0, EX=106.0, TE=172.0)"
+R1001317,LOGIC_PRICE_INVERSION,HIGH,"TC=350.0, CH=250.0, EX=150.0, TE=50.0",Strict Monotonic Order: TC < CH < EX < TE and values > 0,"Non-monotonic pricing (TC=350.0, CH=250.0, EX=150.0, TE=50.0). Expected TC < CH < EX < TE."
+R1001318,LOGIC_BRAND_FUNNEL,HIGH,"BUMO='Gisou', EverUsed='Dabur Amla'",BUMO brand must be subset of Ever Used and P3M Used,"Respondent claimed 'Gisou' as Most Often Used, but it was not reported in Ever Used or Past 3M Used."
+R1001319,LOGIC_PRICE_INVERSION,HIGH,"TC=-25.0, CH=0.0, EX=121.0, TE=163.0",Strict Monotonic Order: TC < CH < EX < TE and values > 0,"Negative or zero price detected (TC=-25.0, CH=0.0, EX=121.0, TE=163.0)"
+R1001320,LOGIC_BRAND_FUNNEL,HIGH,"BUMO='Gisou', EverUsed='Dabur Amla'",BUMO brand must be subset of Ever Used and P3M Used,"Respondent claimed 'Gisou' as Most Often Used, but it was not reported in Ever Used or Past 3M Used."
+R1001321,LOGIC_PRICE_INVERSION,HIGH,"TC=350.0, CH=250.0, EX=150.0, TE=50.0",Strict Monotonic Order: TC < CH < EX < TE and values > 0,"Non-monotonic pricing (TC=350.0, CH=250.0, EX=150.0, TE=50.0). Expected TC < CH < EX < TE."
+R1001322,LOGIC_PRICE_INVERSION,HIGH,"TC=350.0, CH=250.0, EX=150.0, TE=50.0",Strict Monotonic Order: TC < CH < EX < TE and values > 0,"Non-monotonic pricing (TC=350.0, CH=250.0, EX=150.0, TE=50.0). Expected TC < CH < EX < TE."
+R1001323,LOGIC_BRAND_FUNNEL,HIGH,"BUMO='Gisou', EverUsed='Dabur Amla'",BUMO brand must be subset of Ever Used and P3M Used,"Respondent claimed 'Gisou' as Most Often Used, but it was not reported in Ever Used or Past 3M Used."
+R1001324,LOGIC_BRAND_FUNNEL,HIGH,"BUMO='Gisou', EverUsed='Dabur Amla'",BUMO brand must be subset of Ever Used and P3M Used,"Respondent claimed 'Gisou' as Most Often Used, but it was not reported in Ever Used or Past 3M Used."
+R1001325,LOGIC_PRICE_INVERSION,HIGH,"TC=-25.0, CH=0.0, EX=131.0, TE=192.0",Strict Monotonic Order: TC < CH < EX < TE and values > 0,"Negative or zero price detected (TC=-25.0, CH=0.0, EX=131.0, TE=192.0)"
+R1001326,LOGIC_BRAND_FUNNEL,HIGH,"BUMO='Gisou', EverUsed='Dabur Amla'",BUMO brand must be subset of Ever Used and P3M Used,"Respondent claimed 'Gisou' as Most Often Used, but it was not reported in Ever Used or Past 3M Used."
+R1001327,LOGIC_BRAND_FUNNEL,HIGH,"BUMO='Gisou', EverUsed='Dabur Amla'",BUMO brand must be subset of Ever Used and P3M Used,"Respondent claimed 'Gisou' as Most Often Used, but it was not reported in Ever Used or Past 3M Used."
+R1001328,LOGIC_PRICE_INVERSION,HIGH,"TC=350.0, CH=250.0, EX=150.0, TE=50.0",Strict Monotonic Order: TC < CH < EX < TE and values > 0,"Non-monotonic pricing (TC=350.0, CH=250.0, EX=150.0, TE=50.0). Expected TC < CH < EX < TE."
+R1001329,LOGIC_BRAND_FUNNEL,HIGH,"BUMO='Gisou', EverUsed='Dabur Amla'",BUMO brand must be subset of Ever Used and P3M Used,"Respondent claimed 'Gisou' as Most Often Used, but it was not reported in Ever Used or Past 3M Used."
+R1001330,LOGIC_BRAND_FUNNEL,HIGH,"BUMO='Gisou', EverUsed='Dabur Amla'",BUMO brand must be subset of Ever Used and P3M Used,"Respondent claimed 'Gisou' as Most Often Used, but it was not reported in Ever Used or Past 3M Used."
+R1001331,LOGIC_BRAND_FUNNEL,HIGH,"BUMO='Gisou', EverUsed='Dabur Amla'",BUMO brand must be subset of Ever Used and P3M Used,"Respondent claimed 'Gisou' as Most Often Used, but it was not reported in Ever Used or Past 3M Used."
+R1001332,LOGIC_BRAND_FUNNEL,HIGH,"BUMO='Gisou', EverUsed='Dabur Amla'",BUMO brand must be subset of Ever Used and P3M Used,"Respondent claimed 'Gisou' as Most Often Used, but it was not reported in Ever Used or Past 3M Used."
+R1001333,LOGIC_BRAND_FUNNEL,HIGH,"BUMO='Gisou', EverUsed='Dabur Amla'",BUMO brand must be subset of Ever Used and P3M Used,"Respondent claimed 'Gisou' as Most Often Used, but it was not reported in Ever Used or Past 3M Used."
+R1001334,LOGIC_PRICE_INVERSION,HIGH,"TC=-25.0, CH=0.0, EX=12.1, TE=16.3",Strict Monotonic Order: TC < CH < EX < TE and values > 0,"Negative or zero price detected (TC=-25.0, CH=0.0, EX=12.1, TE=16.3)"
+R1001335,LOGIC_PRICE_INVERSION,HIGH,"TC=-25.0, CH=0.0, EX=91.0, TE=139.0",Strict Monotonic Order: TC < CH < EX < TE and values > 0,"Negative or zero price detected (TC=-25.0, CH=0.0, EX=91.0, TE=139.0)"
+R1001336,LOGIC_BRAND_FUNNEL,HIGH,"BUMO='Gisou', EverUsed='Dabur Amla'",BUMO brand must be subset of Ever Used and P3M Used,"Respondent claimed 'Gisou' as Most Often Used, but it was not reported in Ever Used or Past 3M Used."
+R1001337,LOGIC_PRICE_INVERSION,HIGH,"TC=350.0, CH=250.0, EX=150.0, TE=50.0",Strict Monotonic Order: TC < CH < EX < TE and values > 0,"Non-monotonic pricing (TC=350.0, CH=250.0, EX=150.0, TE=50.0). Expected TC < CH < EX < TE."
+R1001338,LOGIC_PRICE_INVERSION,HIGH,"TC=-25.0, CH=0.0, EX=130.0, TE=171.0",Strict Monotonic Order: TC < CH < EX < TE and values > 0,"Negative or zero price detected (TC=-25.0, CH=0.0, EX=130.0, TE=171.0)"
+R1001339,LOGIC_PRICE_INVERSION,HIGH,"TC=350.0, CH=250.0, EX=150.0, TE=50.0",Strict Monotonic Order: TC < CH < EX < TE and values > 0,"Non-monotonic pricing (TC=350.0, CH=250.0, EX=150.0, TE=50.0). Expected TC < CH < EX < TE."
+R1001340,LOGIC_PRICE_INVERSION,HIGH,"TC=-25.0, CH=0.0, EX=97.0, TE=146.0",Strict Monotonic Order: TC < CH < EX < TE and values > 0,"Negative or zero price detected (TC=-25.0, CH=0.0, EX=97.0, TE=146.0)"
+R1001341,LOGIC_BRAND_FUNNEL,HIGH,"BUMO='Gisou', EverUsed='Dabur Amla'",BUMO brand must be subset of Ever Used and P3M Used,"Respondent claimed 'Gisou' as Most Often Used, but it was not reported in Ever Used or Past 3M Used."
+R1001342,LOGIC_BRAND_FUNNEL,HIGH,"BUMO='Gisou', EverUsed='Dabur Amla'",BUMO brand must be subset of Ever Used and P3M Used,"Respondent claimed 'Gisou' as Most Often Used, but it was not reported in Ever Used or Past 3M Used."
+R1001343,LOGIC_PRICE_INVERSION,HIGH,"TC=-25.0, CH=0.0, EX=100.0, TE=139.0",Strict Monotonic Order: TC < CH < EX < TE and values > 0,"Negative or zero price detected (TC=-25.0, CH=0.0, EX=100.0, TE=139.0)"
+R1001344,LOGIC_PRICE_INVERSION,HIGH,"TC=-25.0, CH=0.0, EX=10.2, TE=16.6",Strict Monotonic Order: TC < CH < EX < TE and values > 0,"Negative or zero price detected (TC=-25.0, CH=0.0, EX=10.2, TE=16.6)"
+R1001345,LOGIC_BRAND_FUNNEL,HIGH,"BUMO='Gisou', EverUsed='Dabur Amla'",BUMO brand must be subset of Ever Used and P3M Used,"Respondent claimed 'Gisou' as Most Often Used, but it was not reported in Ever Used or Past 3M Used."
+R1001346,LOGIC_PRICE_INVERSION,HIGH,"TC=350.0, CH=250.0, EX=150.0, TE=50.0",Strict Monotonic Order: TC < CH < EX < TE and values > 0,"Non-monotonic pricing (TC=350.0, CH=250.0, EX=150.0, TE=50.0). Expected TC < CH < EX < TE."
+R1001347,LOGIC_PRICE_INVERSION,HIGH,"TC=350.0, CH=250.0, EX=150.0, TE=50.0",Strict Monotonic Order: TC < CH < EX < TE and values > 0,"Non-monotonic pricing (TC=350.0, CH=250.0, EX=150.0, TE=50.0). Expected TC < CH < EX < TE."
+R1001348,LOGIC_PRICE_INVERSION,HIGH,"TC=-25.0, CH=0.0, EX=137.0, TE=208.0",Strict Monotonic Order: TC < CH < EX < TE and values > 0,"Negative or zero price detected (TC=-25.0, CH=0.0, EX=137.0, TE=208.0)"
+R1001349,LOGIC_BRAND_FUNNEL,HIGH,"BUMO='Gisou', EverUsed='Dabur Amla'",BUMO brand must be subset of Ever Used and P3M Used,"Respondent claimed 'Gisou' as Most Often Used, but it was not reported in Ever Used or Past 3M Used."
+R1001350,LOGIC_BRAND_FUNNEL,HIGH,"BUMO='Gisou', EverUsed='Dabur Amla'",BUMO brand must be subset of Ever Used and P3M Used,"Respondent claimed 'Gisou' as Most Often Used, but it was not reported in Ever Used or Past 3M Used."

@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GCC Consumer Research Kit — Executive Presentation Deck</title>
+  <style>
+    :root {
+      --bg: #0B1120;
+      --card-bg: #1E293B;
+      --card-border: #334155;
+      --text: #F8FAFC;
+      --text-muted: #94A3B8;
+      --accent: #38BDF8;
+      --accent-gold: #F59E0B;
+      --accent-emerald: #10B981;
+      --accent-rose: #F43F5E;
+      --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-family);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow-x: hidden;
+      padding: 20px;
+    }
+    .deck-container {
+      width: 100%;
+      max-width: 1100px;
+      min-height: 680px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+    }
+    .deck-header {
+      padding: 20px 32px;
+      background: rgba(15, 23, 42, 0.7);
+      border-bottom: 1px solid var(--card-border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .deck-title {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--accent);
+      font-weight: 700;
+    }
+    .slide-counter {
+      font-size: 14px;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+    .slide-content {
+      flex: 1;
+      padding: 40px;
+      display: none;
+      flex-direction: column;
+      animation: fadeIn 0.3s ease;
+    }
+    .slide-content.active {
+      display: flex;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .action-headline {
+      font-size: 24px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+      line-height: 1.3;
+    }
+    .slide-subtitle {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      flex: 1;
+    }
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      flex: 1;
+    }
+    .card {
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+    .card-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .stat-huge {
+      font-size: 42px;
+      font-weight: 800;
+      color: #FFFFFF;
+      margin: 8px 0;
+    }
+    .stat-label {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .badge-gold { background: rgba(245, 158, 11, 0.2); color: var(--accent-gold); border: 1px solid rgba(245, 158, 11, 0.4); }
+    .badge-emerald { background: rgba(16, 185, 129, 0.2); color: var(--accent-emerald); border: 1px solid rgba(16, 185, 129, 0.4); }
+    .badge-cyan { background: rgba(56, 189, 248, 0.2); color: var(--accent); border: 1px solid rgba(56, 189, 248, 0.4); }
+    .quote-box {
+      background: rgba(30, 41, 59, 0.8);
+      border-left: 4px solid var(--accent);
+      padding: 14px 18px;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #E2E8F0;
+      font-size: 13px;
+      margin-top: 12px;
+      line-height: 1.5;
+    }
+    .quote-author {
+      font-style: normal;
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-top: 6px;
+      font-weight: 600;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      margin-top: 8px;
+    }
+    th {
+      text-align: left;
+      padding: 10px 12px;
+      background: rgba(15, 23, 42, 0.9);
+      color: var(--accent);
+      border-bottom: 1px solid var(--card-border);
+      font-weight: 600;
+    }
+    td {
+      padding: 10px 12px;
+      border-bottom: 1px solid rgba(51, 65, 85, 0.5);
+      color: #E2E8F0;
+    }
+    tr:last-child td { border-bottom: none; }
+    .highlight-cell {
+      background: rgba(56, 189, 248, 0.1);
+      font-weight: 700;
+      color: var(--accent);
+    }
+    .deck-footer {
+      padding: 16px 32px;
+      background: rgba(15, 23, 42, 0.7);
+      border-top: 1px solid var(--card-border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .nav-btn {
+      background: #334155;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .nav-btn:hover { background: #475569; }
+    .nav-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+    .progress-bar-container {
+      width: 240px;
+      height: 6px;
+      background: #334155;
+      border-radius: 3px;
+      overflow: hidden;
+    }
+    .progress-bar {
+      height: 100%;
+      background: var(--accent);
+      width: 10%;
+      transition: width 0.3s ease;
+    }
+    .disclaimer-banner {
+      background: rgba(245, 158, 11, 0.15);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      border-radius: 8px;
+      padding: 10px 16px;
+      font-size: 12px;
+      color: #FCD34D;
+      margin-top: 16px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="deck-container">
+  <!-- Header -->
+  <div class="deck-header">
+    <div class="deck-title">GCC Consumer Research Kit &bull; Hair & Scalp Care U&A</div>
+    <div class="slide-counter" id="slide-indicator">Slide 1 of 10</div>
+  </div>
+
+  <!-- SLIDE 1 -->
+  <div class="slide-content active" id="slide-1">
+    <div class="action-headline">The GCC Hair Care Market is Undergoing a Structural Pivot from Heavy Oiling to Daily Bio-Clinical Scalp Therapy</div>
+    <div class="slide-subtitle">Executive Summary & Strategic Thesis | KSA, UAE, Kuwait Study (N = 1,211 Completes; 30 Qual Sessions)</div>
+    
+    <div class="grid-3">
+      <div class="card">
+        <span class="badge badge-cyan">Environmental Shock</span>
+        <div class="stat-huge">84%</div>
+        <div class="stat-label">of urban UAE consumers report desalinated hard tap water causes brittle hair and mineral buildup.</div>
+      </div>
+      <div class="card">
+        <span class="badge badge-gold">The Washout Friction</span>
+        <div class="stat-huge">3x</div>
+        <div class="stat-label">shampoo washes required to rinse traditional FMCG oils, leading to severe routine fatigue.</div>
+      </div>
+      <div class="card">
+        <span class="badge badge-emerald">Commercial Coridor</span>
+        <div class="stat-huge">85-110</div>
+        <div class="stat-label">SAR/AED optimal mass-prestige pricing corridor identified via Van Westendorp PSM.</div>
+      </div>
+    </div>
+
+    <div class="disclaimer-banner">
+      <strong>RESEARCH CRAFT & SIMULATION DISCLOSURE:</strong> All survey metrics, percentages, Van Westendorp curves, and qual quotes are synthetic research artifacts. Macro context citations refer to public industry benchmarks (Euromonitor, McKinsey, GASTAT).
+    </div>
+  </div>
+
+  <!-- SLIDE 2 -->
+  <div class="slide-content" id="slide-2">
+    <div class="action-headline">Urban GCC Consumers Suffer Acute Scalp Stress Driven by Desalinated Tap Water and Extended Headwear Wear</div>
+    <div class="slide-subtitle">Module 1 U&A: Perceived Environmental & Lifestyle Stressors (% Agreement 4+5)</div>
+    
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title">Stressors Battery Crosstab (% Agree)</div>
+        <table>
+          <thead>
+            <tr><th>Stressor Statement</th><th>Total (A)</th><th>KSA (B)</th><th>UAE (C)</th><th>KUW (D)</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Hard tap-water mineral buildup</td><td class="highlight-cell">82.4%</td><td>79.2%</td><td class="highlight-cell">84.2% B</td><td>81.3%</td></tr>
+            <tr><td>Indoor air conditioning dryness</td><td>74.1%</td><td>72.8%</td><td>75.5%</td><td>76.9%</td></tr>
+            <tr><td>Summer heat & oily roots</td><td>78.6%</td><td>76.4%</td><td class="highlight-cell">81.1% B</td><td>79.1%</td></tr>
+            <tr><td>Hijab/sheyla sweat trapping</td><td class="highlight-cell">78.4%</td><td class="highlight-cell">81.5% C</td><td>72.4%</td><td>77.8%</td></tr>
+            <tr><td>Noticeable hair shedding/thinning</td><td>76.2%</td><td>75.1%</td><td>77.4%</td><td>78.0%</td></tr>
+          </tbody>
+        </table>
+        <div style="font-size:11px; color:#94A3B8; margin-top:8px;">Bases: Total n=1,211, KSA n=605, UAE n=424, Kuwait n=182. Letters indicate p &lt; 0.05.</div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Voice of the Consumer (Simulated Qual)</div>
+        <div class="quote-box">
+          "The water in Riyadh literally eats your hair away... Within 3 months of moving, my hair became brittle like straw. You take a shower and feel this calcium film that no shampoo can remove. Every Friday I rinse with drinking water."
+          <div class="quote-author">&mdash; Fatima Al-Otaibi (29, Saudi National, Riyadh, IDI)</div>
+        </div>
+        <div class="quote-box">
+          "After 9 hours under a tight underscarf in the summer, your scalp is trapped in a sauna. Your roots get tender. You need an ultra-breathable scalp tonic, not heavy cooking oil."
+          <div class="quote-author">&mdash; Aisha Al-Dossari (24, Saudi National, Dammam, FGD)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 3 -->
+  <div class="slide-content" id="slide-3">
+    <div class="action-headline">While Traditionalists Rely on Overnight Baths, Modern Professionals Demand Fast-Absorbing Leave-Ins</div>
+    <div class="slide-subtitle">Usage Ritual Divergence across Consumer Segments</div>
+    
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title">Application Rituals by Segment</div>
+        <table>
+          <thead>
+            <tr><th>Ritual Moment</th><th>Total (A)</th><th>Traditional (B)</th><th>Bio-Clinical (C)</th><th>Pragmatic (D)</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Overnight treatment (sleep with oil)</td><td>38.2%</td><td class="highlight-cell">72.4% CD</td><td>21.5%</td><td>18.2%</td></tr>
+            <tr><td>Pre-wash intensive bath (30-60 min)</td><td>51.4%</td><td class="highlight-cell">68.1% CD</td><td>46.2% D</td><td>31.4%</td></tr>
+            <tr><td>Post-wash damp scalp leave-in drops</td><td>44.8%</td><td>28.4%</td><td class="highlight-cell">62.8% B</td><td>38.6% B</td></tr>
+            <tr><td>Dry styling finish (tame frizz)</td><td>36.5%</td><td>31.2%</td><td>34.1%</td><td class="highlight-cell">49.2% BC</td></tr>
+          </tbody>
+        </table>
+        <div style="font-size:11px; color:#94A3B8; margin-top:8px;">Bases: Total n=1,211, Traditionalist n=428, Bio-Clinical n=534, Pragmatic n=249. p &lt; 0.05.</div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Macro Demographic Driver</div>
+        <div style="font-size:13px; line-height:1.6; color:#CBD5E1;">
+          <p><strong>Workforce Expansion:</strong> Saudi female labor participation surged from ~17% (2017) to &gt;35% in 2023 under Vision 2030 (<em>GASTAT Q4 2023</em>).</p>
+          <p style="margin-top:10px;"><strong>Time Compression:</strong> Working women have eliminated 2-hour pre-wash rituals on weekdays, pivoting toward 30-second post-shower dropper treatments that absorb instantly before applying their sheyla.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 4 -->
+  <div class="slide-content" id="slide-4">
+    <div class="action-headline">Legacy FMCG Brands Face High Trial but Massive Consideration Bleed to Prestige Indie Innovators</div>
+    <div class="slide-subtitle">Brand Funnel Equity: Awareness &bull; Past 3M Usage &bull; Brand Used Most Often (BUMO)</div>
+    
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title">Brand Funnel Performance</div>
+        <table>
+          <thead>
+            <tr><th>Brand</th><th>Aided Awar.</th><th>Past 3M</th><th>BUMO Share</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Dabur Amla (FMCG)</td><td>94.2%</td><td>34.8%</td><td>22.4%</td></tr>
+            <tr><td>Parachute (FMCG)</td><td>89.5%</td><td>29.1%</td><td>17.8%</td></tr>
+            <tr><td>K&eacute;rastase (Salon)</td><td>68.4%</td><td>21.2%</td><td>14.6%</td></tr>
+            <tr><td>The Ordinary (Indie)</td><td>64.2%</td><td>22.8%</td><td>13.2%</td></tr>
+            <tr><td>Olaplex (Prestige)</td><td>58.9%</td><td>16.4%</td><td>9.5%</td></tr>
+            <tr><td>Local Apothecary (Attar)</td><td>52.1%</td><td>14.2%</td><td>8.1%</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <div class="card-title">The "Amla Paradox" in Qualitative Probing</div>
+        <div class="quote-box">
+          "If Dabur Amla walked into a caf&eacute; in Dubai, she would be an old-school auntie smelling intensely of pungent herbs. Everyone respects her, but nobody wants to sit next to her at work."
+          <div class="quote-author">&mdash; Layla Boutros (35, Arab Expat, Dubai, FGD)</div>
+        </div>
+        <div style="font-size:13px; line-height:1.5; color:#CBD5E1; margin-top:12px;">
+          High legacy trial is sustained by nostalgia, but daily loyalty is migrating to clinical indie brands offering aesthetic dropper formats and zero fragrance conflict.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 5 -->
+  <div class="slide-content" id="slide-5">
+    <div class="action-headline">Concept A (Bio-Clinical) Wins on Uniqueness & Relevance, but Concept B (Heritage) Wins on Cultural Believability</div>
+    <div class="slide-subtitle">Monadic Concept Test Head-to-Head (Randomized 50/50 Split, N = 1,211)</div>
+    
+    <div class="card">
+      <table>
+        <thead>
+          <tr><th>Metric (1-5 Scale / %)</th><th>Concept A: Bio-Clinical</th><th>Concept B: Royal Heritage</th><th>Difference</th><th>p-value</th><th>Verdict</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Top-2-Box Purchase Intent (%)</td><td class="highlight-cell">62.1%</td><td>57.9%</td><td>+4.2%</td><td>p = 0.1389</td><td>Directional Advantage</td></tr>
+          <tr><td>Top-Box (Definitely Would Buy)</td><td>27.9%</td><td>25.6%</td><td>+2.3%</td><td>p = 0.3654</td><td>Parity</td></tr>
+          <tr><td>Mean Purchase Intent (1-5)</td><td class="highlight-cell">3.74</td><td>3.64</td><td>+0.10</td><td>p = 0.0977</td><td>Directional Advantage</td></tr>
+          <tr><td>Diagnostic: Uniqueness</td><td class="highlight-cell">4.12</td><td>3.81</td><td>+0.31</td><td>p &lt; 0.001</td><td>Significant Win (A) ***</td></tr>
+          <tr><td>Diagnostic: Relevance</td><td class="highlight-cell">4.05</td><td>3.88</td><td>+0.17</td><td>p = 0.012</td><td>Significant Win (A) *</td></tr>
+          <tr><td>Diagnostic: Believability</td><td>3.68</td><td class="highlight-cell">3.94</td><td>-0.26</td><td>p &lt; 0.001</td><td>Significant Win (B) ***</td></tr>
+          <tr><td>Diagnostic: Value for Money</td><td>3.54</td><td>3.48</td><td>+0.06</td><td>p = 0.384</td><td>Parity</td></tr>
+        </tbody>
+      </table>
+      <div style="font-size:12px; color:#94A3B8; margin-top:12px;">
+        <strong>Strategic Takeaway:</strong> Marrying Concept A's chelating hard-water defense with Concept B's revered regional botanicals (Sidr & Habba Sawda) resolves the tension and unlocks maximum trial.
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 6 -->
+  <div class="slide-content" id="slide-6">
+    <div class="action-headline">Van Westendorp Establishes 85–110 SAR/AED as Optimal Price Corridor; Testing at 155 SAR Creates a 42% Penalty</div>
+    <div class="slide-subtitle">Price Sensitivity Meter Analysis on KSA & UAE Respondents (N = 1,029)</div>
+    
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title">Van Westendorp Key Intersection Points</div>
+        <table>
+          <thead><tr><th>Intersection Metric</th><th>Price</th><th>Economic Meaning</th></tr></thead>
+          <tbody>
+            <tr><td>Marginal Cheapness (PMC)</td><td>75 SAR</td><td>Below this, consumers suspect fake/diluted oil</td></tr>
+            <tr class="highlight-cell"><td>Optimal Price Point (OPP)</td><td>85 SAR</td><td>Minimal purchase resistance point</td></tr>
+            <tr><td>Indifference Point (IPP)</td><td>105 SAR</td><td>Equal balance of cheap vs expensive</td></tr>
+            <tr><td>Marginal Expensiveness (PME)</td><td>120 SAR</td><td>Upper ceiling before mass churn occurs</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Commercial Recommendation</div>
+        <div style="font-size:13px; line-height:1.6; color:#CBD5E1;">
+          <p><span class="badge badge-emerald">Launch Sweet Spot</span></p>
+          <p><strong>Position core 100ml SKU at 95 to 110 SAR / AED</strong> (approx 8.5 to 9.5 KWD in Kuwait).</p>
+          <p style="margin-top:8px;">This preserves luxury margins while staying comfortably below the 120 SAR marginal expensiveness ceiling.</p>
+          <p style="margin-top:8px;"><strong>Discovery SKU:</strong> Launch a 30ml travel format at 39 SAR to overcome initial trial skepticism.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 7 -->
+  <div class="slide-content" id="slide-7">
+    <div class="action-headline">Automated LLM Coding Reaches κ = 1.000 Only After Encoding GCC Cultural & Regional Rules</div>
+    <div class="slide-subtitle">AI Open-End Validation Benchmark (148 Human Benchmark Verbatims)</div>
+    
+    <div class="grid-3">
+      <div class="card">
+        <span class="badge badge-rose">Prompt v1: Zero-Shot</span>
+        <div class="stat-huge">83.8%</div>
+        <div class="stat-label">Accuracy | &kappa; = 0.8107.<br>Misclassified chemical fear with clinical claim doubt.</div>
+      </div>
+      <div class="card">
+        <span class="badge badge-gold">Prompt v2: Few-Shot</span>
+        <div class="stat-huge">94.6%</div>
+        <div class="stat-label">Accuracy | &kappa; = 0.9369.<br>Occasional confusion on hijab folliculitis vs greasiness.</div>
+      </div>
+      <div class="card">
+        <span class="badge badge-emerald">Prompt v3: CoT + GCC</span>
+        <div class="stat-huge">100.0%</div>
+        <div class="stat-label">Accuracy | &kappa; = 1.0000.<br>Near-perfect human alignment across all 7 categories.</div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:16px;">
+      <div class="card-title">Top 3 Coded Purchase Barriers</div>
+      <div style="font-size:13px; color:#CBD5E1; display:flex; justify-content:space-around;">
+        <div><strong>1. Price Barrier (31.2%):</strong> "155 SAR is steep; needs smaller trial size."</div>
+        <div><strong>2. Greasiness / Washout (24.8%):</strong> "Terrified of limp roots under hijab."</div>
+        <div><strong>3. Claim Skepticism (18.4%):</strong> "Doubt chelating water claims."</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 8 -->
+  <div class="slide-content" id="slide-8">
+    <div class="action-headline">Strategic Go-to-Market Blueprint: Win the Gulf by Marrying Bio-Clinical Performance with Regional Elegance</div>
+    <div class="slide-subtitle">Category Playbook for Product Formulation, Packaging, Pricing & Channels</div>
+    
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-title">1. Formulation Hybrid</div>
+        <div style="font-size:13px; color:#CBD5E1; line-height:1.5;">
+          Combine Copper Peptides & Chelating Hard-Water Defense with Cold-Pressed Sidr & Habba Sawda. Zero silicones; 1-shampoo rinse guarantee.
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">2. Packaging Safety</div>
+        <div style="font-size:13px; color:#CBD5E1; line-height:1.5;">
+          Replace fragile glass flacons and messy droppers with shatterproof amber PET flacons equipped with a scalp-parting precision nozzle.
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">3. Channel Strategy</div>
+        <div style="font-size:13px; color:#CBD5E1; line-height:1.5;">
+          Dual presence: Sephora Middle East for prestige beauty authority, alongside Nahdi and Boots for pharmacy trichology credibility.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 9 -->
+  <div class="slide-content" id="slide-9">
+    <div class="action-headline">What We Do Not Know: 5 Critical Field Hypotheses to Validate Prior to Capital Deployment</div>
+    <div class="slide-subtitle">Risk Mitigation & Fieldwork Testing Agenda</div>
+    
+    <div class="card">
+      <table>
+        <thead><tr><th>Knowledge Gap & Assumption</th><th>Field Hypothesis to Test in Live Fieldwork</th></tr></thead>
+        <tbody>
+          <tr><td><strong>In-Home Replenishment Velocity</strong><br>Synthetic U&A reflects stated intent; real bottle usage rate is unknown.</td><td><em>Hypothesis:</em> Lightweight leave-in serums achieve 2.4x higher annual replenishment than traditional oils due to daily post-shower application.</td></tr>
+          <tr><td><strong>Shower Filter Redundancy</strong><br>Do filter owners perceive chelating serums as redundant?</td><td><em>Hypothesis:</em> Shower filter owners exhibit lower willingness to pay for topical chelating claims unless framed as "cellular root defense".</td></tr>
+          <tr><td><strong>Male Scalp/Beard Cross-Usage</strong><br>Male incidence was capped at 35% in survey.</td><td><em>Hypothesis:</em> Urban GCC males represent a high-margin dual-use (scalp thinning + beard care) segment requiring sub-60s absorption.</td></tr>
+          <tr><td><strong>Retail Channel Conversion</strong><br>Sephora vs Pharmacy (Nahdi/Boots) split.</td><td><em>Hypothesis:</em> Over 60% of trial will occur through pharmacy chains due to higher clinical trust for hair loss concerns.</td></tr>
+          <tr><td><strong>Longitudinal Fragrance Fatigue</strong><br>Initial scent appeal vs daily 8-hour wear.</td><td><em>Hypothesis:</em> Perfumed scalp treatments face higher churn due to fragrance fatigue or clash with personal French/oriental perfumes.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- SLIDE 10 -->
+  <div class="slide-content" id="slide-10">
+    <div class="action-headline">Appendix: Statistical Governance, Quota Discipline & Repository Deliverables</div>
+    <div class="slide-subtitle">Methodological Compliance with ESOMAR & Market Research Society Standards</div>
+    
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title">Governance Metrics</div>
+        <table>
+          <tbody>
+            <tr><td>Nominal Sample Size (N)</td><td><strong>1,211 Completes</strong> (KSA 50%, UAE 35%, KUW 15%)</td></tr>
+            <tr><td>QC Attrition Rate</td><td><strong>10.3%</strong> (139 defects removed: speeders, straight-liners, duplicates)</td></tr>
+            <tr><td>Weighting Design Effect (DEFF)</td><td><strong>1.124</strong> | Effective Base = <strong>1,077.4</strong> (89.0% efficiency)</td></tr>
+            <tr><td>Minimum Base-Size Discipline</td><td>Bases &lt; 30 suppressed; 30-49 flagged (*); &ge; 50 unrestricted</td></tr>
+            <tr><td>Significance Engine</td><td>Pairwise z-tests & Welch t-tests @ &alpha; = 0.05 + BH FDR control</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Project Repository Deliverables</div>
+        <div style="font-size:12px; line-height:1.8; color:#CBD5E1;">
+          <div>&bull; Questionnaire & Spec: <code>docs/QUESTIONNAIRE.md</code></div>
+          <div>&bull; Qualitative Guides: <code>docs/QUAL_DISCUSSION_GUIDE.md</code></div>
+          <div>&bull; Sampling Plan & Math: <code>docs/SAMPLING_PLAN.md</code></div>
+          <div>&bull; Simulated Qual Compendium: <code>docs/SYNTHETIC_QUAL_EXCERPTS.md</code></div>
+          <div>&bull; Automated QC Removal Log: <code>outputs/qc_removal_log.csv</code></div>
+          <div>&bull; Excel Crosstabs Workbook: <code>outputs/GCC_Hair_Care_Crosstabs_and_Analysis.xlsx</code></div>
+          <div>&bull; AI Validation Report: <code>outputs/open_end_validation_report.md</code></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Navigation -->
+  <div class="deck-footer">
+    <button class="nav-btn" id="prev-btn" onclick="prevSlide()" disabled>&larr; Previous</button>
+    <div class="progress-bar-container">
+      <div class="progress-bar" id="progress-bar"></div>
+    </div>
+    <button class="nav-btn" id="next-btn" onclick="nextSlide()">Next &rarr;</button>
+  </div>
+</div>
+
+<script>
+  let currentSlide = 1;
+  const totalSlides = 10;
+
+  function showSlide(n) {
+    document.querySelectorAll('.slide-content').forEach(s => s.classList.remove('active'));
+    document.getElementById(`slide-${n}`).classList.add('active');
+    document.getElementById('slide-indicator').textContent = `Slide ${n} of ${totalSlides}`;
+    document.getElementById('progress-bar').style.width = `${(n / totalSlides) * 100}%`;
+    document.getElementById('prev-btn').disabled = (n === 1);
+    document.getElementById('next-btn').disabled = (n === totalSlides);
+  }
+
+  function nextSlide() {
+    if (currentSlide < totalSlides) {
+      currentSlide++;
+      showSlide(currentSlide);
+    }
+  }
+
+  function prevSlide() {
+    if (currentSlide > 1) {
+      currentSlide--;
+      showSlide(currentSlide);
+    }
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight' || e.key === ' ') nextSlide();
+    if (e.key === 'ArrowLeft') prevSlide();
+  });
+</script>
+
+</body>
+</html>
